@@ -3,7 +3,7 @@
  *
  *       Filename:  deuterons_hw5_task2.c
  *       	Usage:  ./deuterons_hw5_task2.c
- *    Description:  :w
+ *    Description:  Program for conversion of miles to kilometers
  *
  *
  *        Version:  1.0
