@@ -1,8 +1,8 @@
 /*
  * =====================================================================================
  *
- *       Filename:  duterons_hw5_task2.c
- *       	Usage:  ./duterons_hw5_task2.c
+ *       Filename:  deuteron_hw5_task2.c
+ *       	Usage:  ./deuteron_hw5_task2.c
  *    Description:  Coverts a table of values from miles to kilometers.
  *
  *        Version:  1.0
@@ -29,8 +29,6 @@ int main(void)
 	scanf("%d", &increments);
 	printf("Miles  =  Kilometers\n");
 	MakeMilesKmTable(startingMiles, endingMiles, increments);
-
-
 
 	return 0;
 }
