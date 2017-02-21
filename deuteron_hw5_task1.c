@@ -1,42 +1,38 @@
 /*
  * =====================================================================================
  *
- *       Filename:  deuteron_hw5_task1.c
- *       	Usage:  ./deuteron_hw5_task1.c
- *    Description:  Calculations for an annulus.  
+ *       Filename:  deuteron_hw5_task11.c
+ *       	Usage:  ./deuteron_hw5_task11.c
+ *    Description: Calculating second moment of inertia
  *
  *        Version:  1.0
- *        Created:  02/14/2017 04:41:59 PM
+ *        Created:  02/21/2017 02:37:31 AM
  *       Compiler:  gcc -Wall -Werr
- *         Author:  Julie Collings juliecollings@mail.weber.edu
+ *         Author:  Sherry Masutani (), sherrymasutani@mail.weber.edu
  * =====================================================================================
  */
+
 #include <stdio.h>
+#include <math.h>
 
-//Function prototype
-void AnnulusMoment(double i, double j);
+void AnnulusMoment(double x, double y);
 
-int main()
+int main(void)
 {
 	double outer, inner;
-	//Get the two radii from which to do calculations
-	printf("Enter the value for outer radius (r2): ");
+	printf("Enter value for outer radius: ");
 	scanf("%lf", &outer);
-	printf("Enter the value for inner radius (r1): ");
+	printf("Enter value for inner radius: ");
 	scanf("%lf", &inner);
-	//Pass the values to the function
 	AnnulusMoment(outer, inner);
 	return 0;
 }
 
-//Function definition of function used to calculate and display the second moment of inertia
-void AnnulusMoment(double i, double j)
+void AnnulusMoment(double x, double y)
 {
-	double inertia = 0.0;
-	//Calculate the inertia
-	inertia = (3.14/4) *((i * i * i * i) - (j * j * j * j));
-	//Display the calculated value
-	printf("The second moment of inerta is %.2f \n", inertia);
+	double I = 0.0;
+	I = (3.14159265/4) * ( (pow(x, 4)) - (pow(y, 4)) );
+	printf("The second moment of inertia is: %.2f.\n", I);
 	return;
-
 }
+
